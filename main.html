@@ -1,37 +1,40 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title></title>
-		<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-		 crossorigin="anonymous">
-		<link rel="stylesheet" href="css/main.css" />
-	</head>
-	<body>
-		<form id="lz-form" class="form-signin">
-			<div class="form-group">
-				<label>账 号</label>
-				<input class="form-control" placeholder="account" data-bv="true" data-bv-require="true"
-				 data-bv-require-error="*必填项">
-				<span class="help-block"></span>
-			</div>
-			<div class="form-group">
-				<label for="exampleInputPassword1">密 码</label>
-				<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" data-bv="true"
-				 data-bv-require="true" data-bv-require-error="*必填项">
-				<span class="help-block"></span>
-			</div>
-			<button type="submit" class="btn btn-primary">Login</button>
-		</form>
-		<script src="js/jQuery2.js"></script>
-		<script src="js/bootstrapCheck.js"></script>
-		<script>
-			$(function() {
-				$('#lz-form').bootstrapValidator({
-					raise: "change"
-				})
-			});
-		</script>
-	</body>
+
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+		integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+	<form id="lz-form" class="form-signin">
+		<div class="form-group">
+			<label>账 号</label>
+			<input class="form-control" placeholder="account" data-bv="true" data-bv-require="true"
+				data-bv-require-error="*必填项">
+			<span class="help-block"></span>
+		</div>
+		<div class="form-group">
+			<label for="exampleInputPassword1">密 码</label>
+			<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" data-bv="true"
+				data-bv-require="true" data-bv-require-error="*必填项">
+			<span class="help-block"></span>
+		</div>
+		<button type="submit" class="btn btn-primary">Login</button>
+	</form>
+	<script src="js/jQuery2.js"></script>
+	<script src="js/bootstrapCheck.js"></script>
+	<script>
+		$(function () {
+			$('#lz-form').bootstrapValidator({
+				raise: "change"
+			})
+		});
+	</script>
+</body>
+
 </html>
