@@ -1,6 +1,6 @@
 (function (global, factory, plug) {
 	// 告诉javascript引擎这是一个函数表达式，不是函数声明
-	return factory.call(global, global.jQuery, plug); // call 重定义this的作用域
+	return factory.call(global, global.jQuery, plug); // call 把 factory 的内容劫持到了 global 上，并传入两个参数分别是jq对象和插件名
 })(typeof window !== undefined ? window : this, function ($, plug) {
 	// $.fn.method()=function(){}的调用把方法扩展到了对象的prototype上
 	var __DFFS__ = {
